@@ -1,7 +1,7 @@
 :root{
     --primary-color:#8dc63f;
     --text-color: #141d23;
-    --btn-color:  #ea375c;
+    --pink-color:  #ea375c;
     --top-header-height: 208px;
     --top-header-above: 56px;
     --top-header-below:calc(var(--top-header-height)var(--top-header-above));

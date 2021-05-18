@@ -1,7 +1,7 @@
 header{
     background: url(../images/slide-1.jpg);
     width: 100%;
-    height: 500px;
+    height: 820px;
     position: relative;
 }
 .top__header{
@@ -87,7 +87,7 @@ header{
 .header__search-icon:hover{
     color: var(--primary-color);
 }
-..header__nav {
+.header__nav {
     width: 100%;
     top: 0;
     left: 0;
@@ -177,8 +177,7 @@ header{
     text-decoration: none;
     color: var(--primary-color);
 }
-.header__navbar-shop-menu-link-none-border{
-}
+
 .header__navbar-shop-menu-title {
     font-family: "Lora", Sans-serif;
     padding-left: 10px;
@@ -307,7 +306,6 @@ header{
 
 .a{
     background: #f5efef;
-   
 }
 .header__nav{
     width: 100%;
@@ -320,9 +318,14 @@ header{
 
 .top__main-content{
     padding: 102px 0;
+}
+.border__bottom{
     border-bottom: 1px dotted #c6c6c6;
 }
-.top__products{
+.list-products{
+    padding: 10px;
+}
+.featured__products{
     font-family: "Montserrat", Sans-serif;
     position: relative;
 }
@@ -332,19 +335,19 @@ header{
 .content--title_futured-product{
     margin-bottom: 40px;
 }
-.content--title{
-    margin-top: 102px;
+.content--title {
+    margin-top: 80px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 .content--title-bold, .content--title-normal{
-    color: var(--text-color);
+    font-family: "Montserrat", Sans-serif;
     font-size: 2.4rem;
     line-height: 30px;
 }
 .content--title-bold{
-    font-weight: 700;
+    font-weight: 600;
     padding-right: 16px;
 }
 .content--title-normal{
@@ -406,7 +409,7 @@ header{
     letter-spacing: 1px;
     display: inline-block;
     color: #ffffff;
-    background-color: #ea375c;
+    background-color: var(--pink-color);
     padding: 2px 8px;
     margin: 20px 0px 0px 19px;
 }
@@ -432,7 +435,7 @@ header{
     font-weight: 700;
     line-height: 27px;
     letter-spacing: 1px;
-    color: #ea375c;
+    color: var(--pink-color);
     text-align: center;
     margin: 7px 0px 0px 0px;
 }
@@ -466,7 +469,7 @@ header{
 }
 .product_btn-select-link:hover{
     text-decoration: none;
-    background: var(--btn-color);
+    background: var(--pink-color);
     color: #fff;
     font-weight: 600;
     border: none;
@@ -497,8 +500,7 @@ header{
     justify-content: center;
     padding-top: 15px;
 }
-.product-tags-item{
-}
+
 .product-tags-link{
     color: #999999;
     text-decoration: none;
@@ -537,4 +539,173 @@ header{
     color:#141d23;
     opacity: 0.4;
 }
+.top__header-arrow-size-s {
+    position: absolute;
+    top: 140px;
+}
+.top__header-arrow-left-size-s, .top__header-arrow-right-size-s{
+    background-color: #ffffff;
+    color: #999999;
+    font-size: 14px;
+    width: 49px;
+    height: 49px;
+    border-style: solid;
+    border-width: 1px 1px 1px 1px;
+    border-color: var(--text-color);
+}   
+.top__header-arrow-left-size-s {
+    margin-left: 15px;
+}
+.top__header-arrow-right-size-s{
+    margin-right: 15px;
+}
+.top__header-arrow-right-size-s:hover, .top__header-arrow-left-size-s:hover{
+    background: var(--primary-color);
+    color: #fff;
+    font-weight: 500;
+    opacity: 1;
+}
+/* ORGANICA */
 
+.organica-event, .products-sale, .customer-reviews{
+    margin-top: 40px;
+    border-top: 1px dotted #c6c6c6;
+    width: 100%;
+    padding: 12px;
+}
+.content--title-organica-event{
+    margin-top: 40px;
+}
+.organica-event-img-first, .organica-event-img-second{
+    margin: 0px 20px 0px 15px;
+    padding: 301px 0px 33px 33px;
+}
+.organica-event-img-first{
+    background: url('../images/Depositphotos_33789223_original.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+.organica-event-img-second{
+    background: url('../images/Depositphotos_3658334_original.webp');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+h4.organica-event-detail-content-title{
+    width: 100%;
+    font-family: "Montserrat", Sans-serif;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 36px;
+    letter-spacing: 0px;
+    text-align: left;
+}
+.organica-event-detail-content--link{
+    color: #fff;
+    text-decoration: none;
+}
+.organica-event-detail-content--link:hover{
+    color: var(--pink-color);
+    text-decoration: none;
+}
+/* products sale */
+.content--title-products-sale {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.customer-reviews-inner {
+    border-radius: 5px 5px 5px 5px;
+   width: 100%;
+   height: 100%;
+}
+.customer-reviews-inner-content{
+    display: flex;
+    flex-flow: column nowrap;
+    border-style: solid;
+    border-width: 1px 1px 1px 1px;
+    border-color: #cccccc;
+    border-radius: 2px 2px 2px 2px;
+    box-shadow: 0px 1px 4px 0px rgb(0 0 0 / 20%);
+}
+.customer-reviews-inner-represent{
+    align-self: flex-start;
+    margin: 10px 10px 10px 10px;
+    border-style: solid;
+    border-width: 5px 5px 5px 5px;
+    border-color: #ffffff;
+    border-radius: 50%;
+    box-shadow: 0px 0px 5px 0px #d1d1d1;
+}
+.customer-reviews-inner-img{
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+}
+.customer-reviews-inner-text{
+    align-self: center;
+    text-align: center;
+    color: #686868;
+    font-family: "Lora", Sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 25px;
+    letter-spacing: 1px;
+    width: 71%;
+    background-color: rgba(255,255,255,0);
+    padding: 0px 0px 0px 0px;
+    margin: -135px 0px 0px 0px;
+    border-radius: 5px 5px 5px 5px;
+}
+.customer-reviews-inner-author {
+    text-align: center;
+    color: #333333;
+    font-family: "Lora", Sans-serif;
+    font-size: 20px;
+    letter-spacing: 1px;
+    margin: 8px 0px 50px 0px;
+}
+.dot-list{
+    display: flex;
+    justify-content: center;
+    margin: -29px 0px 8px 0px;
+}
+.dot-item{
+    padding: 5px;
+    list-style: none;
+    
+    
+}
+.dot {
+    border-radius: 50%;
+    width: 12px;
+    height: 12px;
+    border-color: #333;
+    border-style: solid;
+    border-radius: 50%;
+}
+
+.dot-light{
+    border-style: solid;
+    border-radius: 50%;
+    border-color: #999999;
+}
+.dot:hover{
+    border-color: #333;
+}
+/* BOTTOM MAIN CONTENT */
+.bottom-main-content{
+    background-color: #889b53;
+    margin-top: 61px;
+    margin-bottom: -70px;
+}
+.contact-detail{
+    width:50%;
+}
+.contact-detail-wrap{
+    padding: 10px;
+}
+.contact-detail-title{
+    
+}
